@@ -1,0 +1,8 @@
+[X2DownloadableContentInfo_SecondWave]
+strDeltaStrike_Description = "Delta Strike: Aliens and XCOM armor have increased durability for longer tactical engagements."
+strDeltaStrike_Tooltip = "Grants more tailored durability bonuses to aliens and XCOM soldiers than Beta Strike. Psionic enemies gain shields that grant a defense bonus while active. Robotic enemies gain armor that grant damage reduction while active. ADVENT gains bonus defense when under half health. Melee aliens gain large HP regeneration. Do not use in conjunction with Theta Strike."
+
+strThetaStrike_Description = "Theta Strike: Aliens and XCOM armor durability converted from HP to armor/shields."
+strThetaStrike_Tooltip = "Changes durability of all units to about the same as vanilla, but using armor/shields instead. If an enemy would gain armor/shields, that amount is subtracted from their health total. Do not use in conjunction with Delta Strike."
+
+mstrShieldLabel=SHIELDS

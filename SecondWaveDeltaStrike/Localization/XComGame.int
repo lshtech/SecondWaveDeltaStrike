@@ -1,0 +1,29 @@
+[SWDS_ReactiveArmor X2AbilityTemplate]
+LocFriendlyName="Reactive Armor"
+LocLongDescription="While still armored, critical chance and damage is reduced against this unit."
+LocHelpText="While still armored, critical chance and damage is reduced against this unit."
+LocFlyOverText="Reactive Armor"
+
+[SWDS_ForceField X2AbilityTemplate]
+LocFriendlyName="Force Field"
+LocLongDescription="While still shielded, accuracy is reduced against this unit."
+LocHelpText="While still shielded, accuracy is reduced against this unit."
+LocFlyOverText="Force Field"
+
+[SWDS_AdrenalineRush X2AbilityTemplate]
+LocFriendlyName="Adrenaline Rush"
+LocLongDescription="While heavily wounded, this unit gains bonus defense."
+LocHelpText="While heavily wounded, this unit gains bonus defense."
+LocFlyOverText="Adrenaline Rush"
+
+[SWDS_HyperRegen X2AbilityTemplate]
+LocFriendlyName="Hyper Regeneration"
+LocLongDescription="This unit regenerates an immense amount of HP per turn."
+LocHelpText="This unit regenerates an immense amount of HP per turn."
+LocFlyOverText="Hyper Regeneration"
+
+[SWDS_ChosenActionPoints X2AbilityTemplate]
+LocFriendlyName="The Elder's Finest"
+LocLongDescription="The Chosen gains additional non-movement action points."
+LocHelpText="TThe Chosen gains additional non-movement action points."
+LocFlyOverText="The Elder's Finest"

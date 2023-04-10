@@ -1,0 +1,19 @@
+﻿[mod]
+publishedFileId=1159730025
+Title=Second Wave: Delta Strike
+Description=In the spirit of Beta Strike, presenting Second Wave: Delta Strike, where instead of increased HP values, aliens and XCOM alike gain increased armor and shields!
+
+Specifically, this features:
+
+All XCOM armors provide ARMOR and SHIELD (ablative) HP instead of pure HP. Endgame operatives will only have the HP their class gives them!
+
+ADVENT, mechanical enemies, and mutons gain ARMOR based on how much HP they would have gained in Beta Strike.
+
+Berserkers and Faceless gain half of the HP they would have gotten in Beta Strike, but gain a powerful regenerative factor and damage reduction when under half health.
+
+Psionic enemies will instead gain SHIELD HP instead of standard HP that they would have gotten from Beta Strike, making them harder to debuff!
+
+Sectopods and Gatekeepers gain a straight 25% damage reduction buff and will get an extra action point when under 50% HP.
+
+And other stuff. This is NOT balanced for standard XCOM classes.
+RequiresXPACK=true
