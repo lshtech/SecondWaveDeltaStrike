@@ -5,6 +5,7 @@ class X2Effect_SWDS_ReactiveArmor extends X2Effect_Persistent config(GameData_So
 
 var config float DAMAGE_CUT;
 var config int CRIT_CUT;
+var config int CRIT_BONUS;
 
 function int GetDefendingDamageModifier(XComGameState_Effect EffectState, XComGameState_Unit Attacker, Damageable TargetDamageable, XComGameState_Ability AbilityState, 
 										const out EffectAppliedData AppliedData, const int CurrentDamage, X2Effect_ApplyWeaponDamage WeaponDamageEffect, optional XComGameState NewGameState)
@@ -36,13 +37,21 @@ function GetToHitAsTargetModifiers(XComGameState_Effect EffectState, XComGameSta
 
 	// only give a bonus if armor isn't shredded
 	if(Target.GetCurrentStat(eStat_ArmorMitigation) <= 0)
-		return;
-
-	// Cuts crit chance while armor exists
-	CritInfo.ModType = eHit_Crit;
-	CritInfo.Value = - default.CRIT_CUT;
-	CritInfo.Reason = FriendlyName;
-	ShotModifiers.AddItem(CritInfo);
+	{
+		// incraeses crit chance while armor is gone
+		CritInfo.ModType = eHit_Crit;
+		CritInfo.Value = default.CRIT_CUT;
+		CritInfo.Reason = FriendlyName;
+	}
+	else	
+	{
+		// Cuts crit chance while armor exists
+		CritInfo.ModType = eHit_Crit;
+		CritInfo.Value = - default.CRIT_CUT;
+		CritInfo.Reason = FriendlyName;
+		ShotModifiers.AddItem(CritInfo);
+	}
+	
 }
 
 simulated function AddX2ActionsForVisualization_Tick(XComGameState VisualizeGameState, out VisualizationActionMetadata ActionMetadata, const int TickIndex, XComGameState_Effect EffectState)
